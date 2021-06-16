@@ -44,8 +44,9 @@ public class stackUsingSelfLL {
                 this.head = this.tail = null;
             else {
                 this.head = node.next;
+                node.next = null;
             }
-            node.next = null;
+            
             this.size--;
             return node;
         }
